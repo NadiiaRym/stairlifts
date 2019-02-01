@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+*/
+img{
+  max-width: 100%;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+  line-height: 26px;
+}
+.header{
+  position: relative;
+  z-index: 4;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1170px;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+.wrapper_full-width{
+  max-width: none;
+}
+.header__main{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header__line{
+  text-align: center;
+  background: #f2f2f2;
+  color: #636363;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 7px 0;
+
+}
+.header__line a{
+  font-weight: 500;
+}
+
+a{
+  color: inherit;
+}
+.column-logo,.column-main-nav{
+  width: auto;
+}
+.main-nav__opener{
+  position: relative;
+  z-index: 5;
+}
+.main-nav__opener .fas{
+  font-size: 3em;
+  color: #636363;
+  cursor: pointer;
+}
+.header__main .row{
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.page{
+  overflow-y: scroll;
+  flex: 1 auto;
+
+}
+.logo{
+  display: inline-block;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.row_center{
+  justify-content: center;
+}
+
+[class*="column-"]{
+  width: 100%;
+  padding: 0 15px;
+
+}
+.main-nav ul{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: rgba(255, 255, 255, .8);
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  transition: left .5s ease;
+  list-style: none;
+  flex-direction: column;
+}
+.main-nav.is-active ul{
+  left: 0;
+}
+.main-nav ul li:first-child{
+  margin-top: auto;
+}
+.main-nav ul li:last-child{
+  margin-bottom: auto;
+}
+.main-nav ul li.is-active a{
+
+}
+@media (min-width: 1050px){
+  .main-nav__opener{
+    display: none;
+  }
+  .main-nav ul{
+    position: static;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .main-nav ul li{
+
+  }
+  .main-nav ul a{
+
+  }
+}
+[href^="tel:"],[href^="mailto"]{
+  text-decoration: none;
+}
+.header__fixed{
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+}
+.footer{
+  background: #333;
+  color: #fff;
+  margin-top: auto;
+}
+
+
+.info{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info__icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #98c63f;
+  border-radius: 2px;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  margin-right: 25px;
+
+}
+
+.info__text{
+  color: #7d7d7d;
+  padding: top 10px;
+
+}
+@media (min-width: 560px){
+  .info{
+    display: flex;
+  }
+}
+.section{
+  padding: 60px 0 30px;
+}
+.section_green{
+  background: #98c63f;
+  color: #fff;
+  height: 240px;
+  justify-content: center;
+
+}
+.section_green .section__title{
+  color: #fff;
+
+}
+.section__title{
+  color: #1f1f1f;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.content__text a{
+  font-weight: bold;
+}
+.content__text{
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.ta-center{
+  text-align: center;
+}
+.stairlift-type{
+  text-align: center;
+  color: #7d7d7d;
+}
+.stairlift-type__img{
+  margin-bottom: 20px;
+}
+.stairlift-type__title{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #98c63f;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+}
+.stairlift-type__description{
+}
+
+.m-b-20{
+  margin-bottom: 20px;
+}
+.m-b-40{
+  margin-bottom: 40px;
+}
+.m-b-30{
+  margin-bottom: 30px;
+}
+.promice{
+  text-align: center;
+}
+.promice__icon{
+  min-height: 90px;
+  color: #98c63f;
+  font-size: 72px;
+
+}
+.promice__title{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: 'Poppins' sans-serif;
+  color: #98c63f;
+ 
+}
+.promice__text{
+  color: #7d7d7d;
+}
+
+@media (min-width: 560px){ 
+/*phablet*/
+  .column-phablet-1-2{
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px){
+  /*tablet*/
+
+}
+@media (min-width: 1000px){
+  /*laptop*/
+  .column-laptop-1-3{
+    max-width: 33.33%;
+  }
+}
+@media (min-width: 1240px){
+  /*desktop*/
+  .column-desktop-1-4{
+    max-width: 25%;
+  }
+}
+@media (min-width: 1640px){
+  /*extra-large*/
+
+}
